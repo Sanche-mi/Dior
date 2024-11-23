@@ -73,7 +73,14 @@ body{
     margin-top: 100px;
 }
 
+.top-slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
 .top-slaid__inner{
+    min-height: 700px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,4 +121,44 @@ body{
     padding: 21px 55px;
     font-weight: 700;
     color: #7449bb;
+    transition: all .3s ease;
+}
+
+.top-slide__btn:hover{
+    color: #fff;
+    background-color: #7449bb;
+}
+
+.back-btn{
+    /* position: absolute;
+    display: flex; */
+    min-width: 168px;
+    margin-left: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.swiper-button-prev:after, 
+.swiper-button-next:after{
+    content: none;
+}
+
+.container-arrow{
+    position: relative;
+    padding: 0;
+    max-width: 1200px;
+}
+
+.top .swiper{
+    padding-bottom: 80px;
+}
+
+.swiper-button-next{
+    left: 76px;
+    right: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    margin-top: 50px;
 }
